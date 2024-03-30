@@ -3,9 +3,12 @@ Llama 2 (7B) finetuned on 50k instruction-tuning data produced with GPT4. The da
 
 The model can be found on [Huggingface](https://huggingface.co/MadMarx37/llama2-alpaca-gpt4).
 
+The GPT4-based eval can be seen [here](https://wandb.ai/kevinv3796/alpaca-ft/reports/GPT4-eval-of-fine-tuned-Llama2--Vmlldzo3MzUwMjY0)
+
 ### WIP
-The other two files are for extentions to the project that I'm still working on - fine-tuning with PEFT, which is a little slower since there's new parameters. I started a run but it showed the completion time as ~6hr which is why I haven't completed it yet.
-Llama-gpt-eval is for using GPT3.5 and GPT4 to evaluate our model, by running inference with 3.5 on the same prompts and then asking GPT4 to rank between our model and GPT3.5. WIP.
+- [x] GPT4-based eval
+- [ ] Documentation
+- [ ] Parameter-efficient finetuning using QLoRA
 
 ### References
 I followed more than a few tutorials and references for this, starting from Maxime Labonne's [LLM Course](https://github.com/mlabonne/llm-course)
